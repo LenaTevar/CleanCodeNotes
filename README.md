@@ -9,3 +9,4 @@ Stuff I get from school and books in Java
 ---
 # Books
 * Clean Code, Robert C. Martin
+* Java 8 in Action, Urma
