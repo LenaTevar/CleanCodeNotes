@@ -2,14 +2,23 @@ package comments;
 
 public class CommentsInCode {
 	int iceCream = 0;
-	int pizza = 1;
-	examples dummyClass = new examples();
+	int people = 10;
+	DummyClass classExample = new DummyClass();
 	
-	
-	public void comment1() {
-		
-		if(iceCream < pizza) {
-			dummyClass.doSomething();
+	public void iceCreamChecker() {
+		//if there is not enough ice cream, class example buys more. 
+		if(iceCream < people) {
+			classExample.buyMore();
 		}
+	}
+	
+	public void iceCreamChecker2() {
+		if(notEnoughIceCream()) { //<--- obvious meaning
+			classExample.buyMore();
+		}
+	}
+
+	public boolean notEnoughIceCream() {
+		return iceCream < people;
 	}
 }
